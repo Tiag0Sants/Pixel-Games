@@ -1,0 +1,299 @@
+html,
+body{
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+margin: 0;
+}
+
+
+
+
+
+
+.wrapperContainer-header{
+    background-color: rgba(13, 6, 21, 1);
+}
+
+
+
+.wrapperContainer-footer{
+    background-color: rgba(13, 6, 21, 1);
+}
+
+
+.wrapperContainer-menu{
+    background-color: rgba(34, 0, 73, 1);
+}
+
+
+
+.header_nav{
+   
+    max-width: 1550px;
+    height: 115px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+
+.list-item2{
+    display: flex;
+    float: right;
+    margin-top: 25px;
+}
+
+.list-item2 li:hover{
+    background-color:rgb(103, 42, 188) ;
+    padding: 3px;
+}
+.lista_jogos{
+    margin-left: 85%;
+    margin-top: 80px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    z-index: 1;
+    color: white;
+    color: #fff; /* Cor do texto */
+    text-shadow: 4px 4px 4px #000;
+  }
+.barra_pesquisa{
+    margin-right: 80px; 
+    z-index: 1;
+}
+
+
+.barra_pesquisa{
+    background-color: rgba(63, 24, 112, 1);
+    border: none;
+    outline: none;
+    border: 2px solid rgba(80, 10, 135, 1);
+    border-radius: 10px;
+    padding: 14px;
+    color: white;
+ }
+
+/* começo do menu de icones */
+.nav_icons{
+    width: 208.56px;
+    max-height: 69px;
+    margin-right: 1000px;
+    
+    
+}
+
+.nav-icons__list{
+    margin: 0; 
+    padding: 0;
+}
+
+
+.nav-icons__list li {
+  list-style-type: none;
+  margin-left: 8px;
+  display: inline;
+  
+   
+}
+
+
+
+
+/* fim do menu de incones */
+
+
+
+
+
+/* menu opções */
+.nav_content{
+    display: flex;
+    max-width: 487px;
+    }
+    
+    .nav_content ul{
+        list-style-type: none;
+        gap: 16px;
+    }
+    
+    .nav_content ul li{
+        display: inline;
+        padding: 16px
+    }
+    
+    .nav_content ul li a{
+        text-decoration: none;
+        color: white;
+    }
+    
+    .nav_content a:hover{
+        color: rgb(103, 42, 188);
+        
+    }
+    /* fim do menu de opções */
+    
+    
+    
+    
+    
+    /* inicio do forms */
+    
+    .nav-forms{
+    
+        max-width: 274.25px;
+        align-items: center;
+        
+    }
+    
+    .nav-forms for{
+        border-radius: 1px;
+    }
+    
+    /* fim do forms */
+    
+
+
+    /* inicio do menu */
+
+    .main_menu{
+        display: flex;
+    }
+
+
+
+
+    .segurador_conteudo{
+        width: 1550px;
+        height: 812px;
+        margin: auto;
+    }
+
+
+    .menu_principal{
+        width: 145px;
+        height: 724px;
+        background-image: linear-gradient(to top, #460de210, #0000005d);
+        border-radius: 30px;
+        margin-left: 100px;
+    }
+
+
+    .menu-principal_itens{
+        list-style-type: none;    
+        
+    }
+
+
+    .menu-principal_itens li{
+        margin: 45px auto 0px auto;
+        background-image: linear-gradient(to top, rgba(91, 3, 160, 1), rgba(91, 3, 160, 0));
+        width: 132px;
+        height: 40px;
+        border-radius: 3px;
+        margin-left: -35px;
+        text-align: center;
+        border-radius: 30px;
+    
+
+
+    }
+
+    .menu-principal_itens li a{
+        color: white;
+        text-decoration: none;
+        text-align: center;
+        padding-bottom: 10px;
+        align-items: center;
+        display: block;
+        margin-top: 0px;
+        padding-top: 10px;
+    }
+
+
+
+    .menu-principal_itens a:hover{
+        color: blueviolet;
+    }
+
+
+    .item1{
+        background-color: rgb(21, 200, 224);
+        pointer-events: none;
+        
+    }
+
+    .item1 a:hover{
+        color: white;
+    }
+    /* fim do menu */
+
+
+
+    /* inicio do content */
+    .cards_games{
+        width: 1000px;
+        height: 711px;
+        background-image: linear-gradient(to top, #460de210, #0000005d);
+        margin-left: 16px;
+        margin-top: 10px;
+        display: flex;
+        gap: 78px;
+        border-radius: 30px;
+    }
+
+
+
+    .cards-games_container{
+        background-image: linear-gradient(to top, #460de2cc, #0000005d);
+        width: 200px;
+        height: fit-content;
+        margin-left: 10px;
+        margin-top: 20px;
+        align-items: center;
+        border-radius: 20px;
+    }
+
+    .cards-game__action{
+        margin: 30px 0px 0px 40px
+    }
+
+    .price{
+        color: white;
+        background-color: black;
+        padding: 16px;
+        border-radius: 10px;
+        font-size: 16px;
+        text-align: center;
+    }
+
+
+    /* inicio do game 2 */
+    .cards-games_action2{
+        margin: 30px 0px 0px 40px
+    }
+
+    /* fim do game 2 */
+
+    /* fim dos cards */
+
+
+    /* inicio do rodape */
+.rodape{
+    width: 1550px;
+    height: 97px;
+    margin: auto;
+    
+}
+
+.rodape p{
+    text-align: center;
+    color: white;
+    margin: auto;
+    padding-top: 35px;
+}
+
+/* fim do rodape */

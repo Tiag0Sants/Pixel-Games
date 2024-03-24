@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Página de Cadastro</title>
+    <link rel="stylesheet" href="StyleCad.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="wrappernav">
+        <nav class="navkk">
+            <button class="clicked">
+                <span> Instale o APP</span>
+                <div class="areaicon">
+                    <i class="bx bx-download"></i>
+                </div>
+            </button>
+            <div class="menu">
+                <ul>
+                    <li><a href="../pixel_game.html">Loja</a></li>
+                    <li><a href="Sobre.html">Sobre</a></li>
+                    <li><a href="Suporte.html">Suporte</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div class="wrappercad">
+        <div class="wrapper">
+
+            <!--bloco maior que contem imagens e dives -->
+            <div class="bloco-container">
+                <img src="logokk.png" alt="">
+                    <h1>Cadastrar-se</h1>
+
+
+                <!--Bloco das linhas de preenchimento-->
+                <div class="dados">
+                    <form action="PixelGameCadastro.jsp" name="formCadastro">
+
+                        <!--Linha1-->
+                        <div class="dados_linha1">
+                            <input type="text"  id="linha1_pt1"   placeholder="Nome" name="text_nome">
+                            <input id="linha1_pt2" type="text" placeholder="Sobrenome" name="text_sobrenome">
+
+                            <!--div da imagem e da mensagem de informação-->
+                            <div id="erro" onmouseover="exibir()"
+                            onmouseout="exibir()">
+                            </div>
+                            <div id="aviso">  Insira seu nome e sobrenome. </div>
+                            <!--fim da div imagem e informação-->
+                        </div>
+                        <!--Fim da linha 1-->
+
+                        <!--Linha2-->
+                        <div class="dados_linha2">
+                            <input type="text"  id="linha2"   placeholder="Apelido" name="text_apelido">
+
+                            <!--div da imagem e da mensagem de informação-->
+                            <div id="erroApelido" onmouseover="exibir2()"
+                            onmouseout="exibir2()"></div>
+                            <div id="aviso2">  Insira um apelido.</div>
+                            <!--fim da div imagem e informação-->
+
+                        </div>
+                        <!--Fim da linha 2-->
+
+                        <!--Linha3-->
+                        <div class="dados_linha3">
+                            <input type="text" id="linha3" placeholder="E-mail" name="text_email" >
+
+                            <!--div da imagem e da mensagem de informação-->
+                            <div id="erroEmail" onmouseover="exibir3()"
+                            onmouseout="exibir3()"></div>
+                            <div id="aviso3"> Insira seu endereço de E-mail.</div>
+                            <!--fim da div imagem e informação-->
+
+                        </div>
+                        <!--Fim da linha 3-->
+
+
+                        <!--Linha4-->
+                        <div class="dados_linha4">
+                            <input type="password" id="linha4" placeholder="Senha" name="text_senha">
+
+                            <!--div da imagem e da mensagem de informação-->
+                            <div id="erroSenha" onmouseover="exibir4()"
+                            onmouseout="exibir4()"></div>
+                            <div id="aviso4"> Defina sua senha.</div>
+                            <!--fim da div imagem e informação-->
+
+                        </div>
+                        <!--Fim da linha 4-->
+
+                        <!--Linha5-->
+                        <div class="dados_linha5">
+                            <input type="password"  id="linha5" placeholder="Confirmar senha" name="text_Csenha">
+
+                            <!--div da imagem e da mensagem de informação-->
+                            <div id="erroConfirma" onmouseover="exibir5()"
+                            onmouseout="exibir5()"></div>
+                            <div id="aviso5">Confirme a senha.</div>
+                            <!--fim da div imagem e informação-->
+                        </div>
+                        <!--Fim da linha 5-->
+
+
+                        <!--Linha de termos e serviço-->
+                        <div class="termos">
+                            <label><input  type="checkbox" id="termos_caixa" name="termos_c">
+                                <a href="Termos.html">Li e concordo com os termos de serviço.</a>
+                            </label>
+                        </div>
+                        <!--fim-->
+
+                        <button id="btn" value="salvar" type="button" onclick="verificar()"><p>Criar conta</p></button>
+
+                        <!--Botão de voltar-->
+                        <div class="voltar">
+                            <div class="arrowicon">
+                                <i class='bx bx-chevrons-left'></i>
+                            </div>
+                            <p><a href="Login.html">Voltar</a></p>
+                        </div>
+                        <!--fim-->
+                    </form>   
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="wrapperContainer-footer">
+        <footer class="rodape">
+            <p> &copy;2023       Todos os direitos reservados a Pixel games</p>
+        </footer>
+    </div>
+
+
+    <!--seção sript-->
+    <script>
+
+        document.getElementById("aviso").style.display = "none";
+
+    function exibir(){
+
+        if(document.getElementById("aviso").style.display == "none")
+        {  document.getElementById("aviso").style.display= "block";
+        }else{
+        document.getElementById("aviso").style.display = "none";
+        }
+    }
+
+    
+    document.getElementById("aviso2").style.display = "none";
+
+    function exibir2(){
+
+        if(document.getElementById("aviso2").style.display == "none")
+        {  document.getElementById("aviso2").style.display= "block";
+        }else{
+        document.getElementById("aviso2").style.display = "none";
+        }
+    }
+
+
+
+    document.getElementById("aviso3").style.display = "none";
+    function exibir3(){
+
+        if(document.getElementById("aviso3").style.display == "none")
+        {  document.getElementById("aviso3").style.display= "block";
+        }else{
+        document.getElementById("aviso3").style.display = "none";
+        }
+    }
+
+
+    document.getElementById("aviso4").style.display = "none";
+
+    function exibir4(){
+
+        if(document.getElementById("aviso4").style.display == "none")
+        {  document.getElementById("aviso4").style.display= "block";
+        }else{
+        document.getElementById("aviso4").style.display = "none";
+        }
+    }
+
+    document.getElementById("aviso5").style.display = "none";
+
+    function exibir5(){
+
+        if(document.getElementById("aviso5").style.display == "none")
+        {  document.getElementById("aviso5").style.display= "block";
+        }else{
+        document.getElementById("aviso5").style.display = "none";
+        }
+
+    };
+
+
+    function limpar(){
+        document.getElementById("linha1_pt1").style.background = "rgba(63, 24, 112, 1)";
+        document.getElementById("linha1_pt1").style.border = "2px solid rgba(80, 10, 135, 1)";
+
+        document.getElementById("linha1_pt2").style.background = "rgba(63, 24, 112, 1)";
+        document.getElementById("linha1_pt2").style.border = "2px solid rgba(80, 10, 135, 1)";
+        document.getElementById("erro").style.backgroundImage = "";
+        document.getElementById("aviso").textContent ="Insira seu nome e sobrenome.";
+        
+        document.getElementById("linha2").style.background = "rgba(63, 24, 112, 1)";
+        document.getElementById("linha2").style.border = "2px solid rgba(80, 10, 135, 1)";
+        document.getElementById("erroApelido").style.backgroundImage = "";
+        document.getElementById("aviso2").textContent =" Insira um apelido.";
+
+        document.getElementById("linha3").style.background = "rgba(63, 24, 112, 1)";
+        document.getElementById("linha3").style.border = "2px solid rgba(80, 10, 135, 1)";
+        document.getElementById("erroEmail").style.backgroundImage = "";
+        document.getElementById("aviso3").textContent =" Insira seu endereço de E-mail.";
+
+        document.getElementById("linha4").style.background = "rgba(63, 24, 112, 1)";
+        document.getElementById("linha4").style.border = "2px solid rgba(80, 10, 135, 1)";
+        document.getElementById("erroSenha").style.backgroundImage = "";
+        document.getElementById("aviso4").textContent =" Defina uma senha.";
+
+        document.getElementById("linha5").style.background = "rgba(63, 24, 112, 1)";
+        document.getElementById("linha5").style.border = "2px solid rgba(80, 10, 135, 1)";
+        document.getElementById("erroConfirma").style.backgroundImage = "";
+        document.getElementById("aviso5").textContent =" Confirme a senha.";
+
+        };
+
+
+    function verificar(){
+           limpar();
+
+           var enviar = true;
+
+           var nome = document.getElementById("linha1_pt1").value;
+           
+           if( nome.length == 0){
+            enviar = false;
+            document.getElementById("linha1_pt1").style.border = "yellow solid 2px";
+            //deixar vermelho
+            document.getElementById("erro").style.backgroundImage = "url('grommet-icons_status-warningRED.png')";
+            document.getElementById("erro").style.backgroundSize = "33px 30px";
+            document.getElementById("aviso").textContent="Oops! Parece que este campo está vazio. Por favor, preencha-o para continuar.";
+            }
+
+           var sobrenome = document.getElementById("linha1_pt2").value;
+
+           if( sobrenome.length == 0){
+            enviar = false;
+            document.getElementById("linha1_pt2").style.border = "yellow solid 2px";
+            //deixar vermelho
+            document.getElementById("erro").style.backgroundImage = "url('grommet-icons_status-warningRED.png')";
+            document.getElementById("erro").style.backgroundSize = "33px 30px";
+            document.getElementById("aviso").textContent="Oops! Parece que este campo está vazio. Por favor, preencha-o para continuar.";
+            }
+
+            
+           var Apelido = document.getElementById("linha2").value;
+
+           if(Apelido.length == 0 ){
+            enviar = false;
+            document.getElementById("linha2").style.border = "yellow solid 2px"; 
+            //deixar vermelho
+            document.getElementById("erroApelido").style.backgroundImage = "url('grommet-icons_status-warningRED.png')";
+            document.getElementById("erroApelido").style.backgroundSize = "33px 30px";
+            document.getElementById("aviso2").textContent="Oops! Parece que este campo está vazio. Por favor, preencha-o para continuar.";
+           }
+
+
+
+           var Email = document.getElementById("linha3").value;
+
+           if( Email.indexOf ("@") < 0 ) {
+            enviar = false;
+            document.getElementById("linha3").style.border = "yellow solid 2px";
+            //deixar vermelho
+            document.getElementById("erroEmail").style.backgroundImage = "url('grommet-icons_status-warningRED.png')";
+            document.getElementById("erroEmail").style.backgroundSize = "33px 30px";
+            document.getElementById("aviso3").textContent="Digite um endereço de Email valido para continuar.";
+            }
+
+            var Senha = document.getElementById("linha4").value;
+
+            if( Senha.length == 0){
+            enviar = false;
+            document.getElementById("linha4").style.border = "yellow solid 2px";
+           //deixar vermelho
+            document.getElementById("erroSenha").style.backgroundImage = "url('grommet-icons_status-warningRED.png')";
+            document.getElementById("erroSenha").style.backgroundSize = "33px 30px";
+            document.getElementById("aviso4").textContent="Oops! Parece que este campo está vazio. Por favor, preencha-o para continuar.";
+            }
+
+            
+            var ConfirmarSenha = document.getElementById("linha5").value;
+
+            if( ConfirmarSenha.length == 0){
+            enviar = false;
+            document.getElementById("linha5").style.border = "yellow solid 2px";
+            //deixar vermelho
+            document.getElementById("erroConfirma").style.backgroundImage = "url('grommet-icons_status-warningRED.png')";
+            document.getElementById("erroConfirma").style.backgroundSize = "33px 30px";
+            document.getElementById("aviso5").textContent="Oops! Parece que este campo está vazio. Por favor, preencha-o para continuar.";
+            }
+
+             //Comparar a senha e o confirmar senha
+
+            if (ConfirmarSenha !== Senha) {
+            enviar = false;
+            document.getElementById("linha5").style.border = "yellow solid 2px";
+            //deixar vermelho
+            document.getElementById("erroConfirma").style.backgroundImage = "url('grommet-icons_status-warningRED.png')";
+            document.getElementById("erroConfirma").style.backgroundSize = "33px 30px";
+            document.getElementById("aviso5").textContent="Oops! parece que as senhas digitadas não coincidem.";
+            }
+            
+
+            if(enviar){
+            document.formCadastro.submit();
+            }
+    }
+    </script>
+    <!--fim da seção script-->
+    
+
+
+</body>

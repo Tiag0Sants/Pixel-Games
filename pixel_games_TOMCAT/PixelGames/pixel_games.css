@@ -1,0 +1,653 @@
+html,
+body{
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+margin: 0;
+}
+
+
+
+.wrapperContainer-header{
+    background-color: rgba(13, 6, 21, 1);
+}
+
+
+.wrapperContainer-banner{
+    background-color: black;
+}
+
+
+.wrapperContainer-games{
+    background-color: rgba(31, 19, 50, 1);
+}
+
+.wrapperContainer-footer{
+    background-color: rgba(13, 6, 21, 1);
+}
+
+.header_nav{
+   
+    max-width: 1550px;
+    height: 115px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+
+.list-item2{
+    display: flex;
+    float: right;
+    margin-top: 25px;
+}
+
+.list-item2 li:hover{
+    background-color:rgb(103, 42, 188) ;
+    padding: 3px;
+}
+
+
+
+
+/* começo do menu de icones */
+.nav_icons{
+    width: 208.56px;
+    max-height: 69px;
+    margin-right: 400px;
+    gap: 1px;
+    
+    
+}
+
+.nav-icons__list{
+    margin: 0; 
+    padding: 0;
+
+}
+
+
+.nav-icons__list li {
+  list-style-type: none;
+  margin-left: 8px;
+  display: inline;
+  margin-left: 1px;
+  
+   
+}
+
+
+.barra_pesquisa{
+    background-color: rgba(63, 24, 112, 1);
+    border: none;
+    outline: none;
+    border: 2px solid rgba(80, 10, 135, 1);
+    border-radius: 10px;
+    padding: 14px;
+    color: white;
+ }
+ 
+
+
+
+/* fim do menu de incones */
+
+
+
+
+
+
+
+/* menu opções */
+.nav_content{
+display: flex;
+max-width: 487px;
+}
+
+.nav_content ul{
+    list-style-type: none;
+    gap: 16px;
+}
+
+.nav_content ul li{
+    display: inline;
+    padding: 16px
+}
+
+.nav_content ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.nav_content a:hover{
+    color: rgb(103, 42, 188);
+    
+}
+/* fim do menu de opções */
+
+
+
+
+
+/* inicio do forms */
+
+.nav-forms{
+
+    max-width: 274.25px;
+    align-items: center;
+    
+}
+
+.nav-forms for{
+    border-radius: 1px;
+}
+
+/* fim do forms */
+
+
+
+
+
+
+
+.navegation_main{
+    max-width: 1550px;
+    max-height: 277px;
+    
+    margin: auto;
+    background-image: url(./imagens_pixel_game/banner\ atualizado.png);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+
+
+
+
+/* cards de navegação */
+.navegation_cards{
+    display: flex;
+    margin-left: 40px;
+    align-items: center;
+    gap: 40px;
+}
+
+.navegation-card__sports a {
+    color: white;
+    text-decoration: none;
+}
+
+.navegation-card__sports:hover{
+    background-color: blueviolet;
+}
+
+.navegation-card__sports{
+    width: 140px;
+    height: 140px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    text-align: center;
+}
+
+.navegation-card__aventura{
+    width: 140px;
+    height: 140px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    text-align: center;
+}
+.navegation-card__aventura:hover{
+    background-color: blueviolet;
+}
+
+.navegation-card__aventura a {
+    color: white;
+    text-decoration: none;
+}
+
+.navegation-card__gratis{
+    width: 140px;
+    height: 140px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    text-align: center;
+}
+
+.navegation-card__gratis:hover{
+    background-color: blueviolet;
+}
+.navegation-card__gratis a {
+    color: white;
+    text-decoration: none;
+}
+
+.navegation-card__mundo-aberto{
+    width: 140px;
+    height: 140px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    text-align: center;
+    
+}
+.navegation-card__mundo-aberto:hover{
+    background-color: blueviolet;
+}
+
+.navegation-card__mundo-aberto a {
+    color: white;
+    text-decoration: none;
+}
+
+/* fim dos cards de navegação */
+
+
+
+
+
+/* inicio do slider */
+
+.navegation__carrouseel{
+    height: 265px;
+    width: 601px;
+    
+}
+
+
+.slider p{
+    margin-bottom: 0px;
+    background-color: rgba(31, 19, 50, 1);
+    padding-left: 16px;
+    text-transform: uppercase;
+    color: white;
+}
+
+.slider{ 
+    display: block;
+    max-height: 265px;
+     max-width: 601px;
+    margin: auto;
+    margin-top: 40px;
+    margin-right: 40px;
+    position: relative;
+   
+}
+
+.slider li{ 
+    list-style: none;
+    position: absolute;  
+}
+
+
+.slider li img{
+    margin: auto;
+    height: 100%;
+    width: 100%;
+    vertical-align: top;
+}
+
+.slider input{
+    display: none;
+}
+
+.slider label{
+    background-color: rgb(103, 42, 188);
+    bottom: 10px;
+    cursor: pointer;
+    display: block;
+    height: 10px;
+    position: absolute;
+    width: 10px;
+    z-index: 10;
+    margin-left: 16px;
+}
+
+.slider li:nth-child(1) label{
+    left: 10px;
+}
+
+.slider li:nth-child(2) label{
+    left: 30px;
+}
+.slider li:nth-child(3) label{
+    left: 60px;
+}
+
+.slider img{
+    opacity: 0;
+    visibility: hidden;
+}
+
+.slider li input:checked ~ img{
+    opacity: 1;
+    visibility: visible;
+    z-index: 10;
+}
+
+/* fim do slider */
+
+
+/* inicio da lista dos sjogos */
+.games_main{
+    max-width: 1550px;
+    height: 540px;
+    margin:auto;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.games-main_section{
+    width: 823px;
+    height: fit-content;
+    margin: 100px 0px 0px 60px;
+    background-color:rgba(27, 8, 33, 1) ;
+    
+
+    
+}
+
+.games-main_section article ul{
+    list-style-type: none;
+    overflow-y: scroll;
+    height: 300px;
+    scrollbar-color: black ;
+
+}
+
+
+
+
+/*lista 1 */
+.game-list1{
+    display: flex;
+    justify-content: space-between;
+    line-height: .9px;
+    margin: 0;
+    background-color: rgba(27, 8, 33, 1);
+    
+      
+}
+
+.games_legenda1{
+    margin-right: 50px;
+   
+}
+
+.games_legenda1 a{
+    text-decoration: none;
+    color: white;
+}
+
+.description{
+    font-size: 11px;
+}
+
+.games-legenda__price{
+    margin-right: 40px;
+}
+
+.games-legenda__price a{
+    text-decoration: none;
+    color: white;
+
+}
+
+.games-legenda__price img{
+    padding: 0px 30% 0px 30%;
+}
+/* fim lista 1 */
+
+
+
+
+/* lista 2 */
+.game-list2{
+    display: flex;
+    justify-content: space-between;
+    line-height: .9px;
+    margin: 0;
+    background-color:  rgba(31, 19, 50, 1);
+   
+    
+      
+}
+
+.games_legenda2{
+    
+    margin-right: 215px;
+}
+
+.games_legenda2 a{
+    text-decoration: none;
+    color: white;
+}
+
+.description{
+    font-size: 11px;
+}
+
+.games-legenda__price{
+    margin-right: 40px;
+}
+
+.games-legenda__price a{
+    text-decoration: none;
+    color: white;
+
+}
+
+.games-legenda__price img{
+    padding: 0px 30% 0px 30%;
+}
+/* fim da lista 2 */
+
+
+
+/* lista 3 */
+.game-list3{
+    display: flex;
+    justify-content: space-between;
+    line-height: .9px;
+    margin: 0;
+   
+      
+}
+
+.games_legenda3{
+    margin-right: 96px;
+   
+}
+
+.games_legenda3 a{
+    text-decoration: none;
+    color: white;
+}
+
+.description{
+    font-size: 11px;
+}
+
+.games-legenda__price{
+    margin-right: 40px;
+}
+
+.games-legenda__price a{
+    text-decoration: none;
+    color: white;
+
+}
+
+.games-legenda__price img{
+    padding: 0px 30% 0px 30%;
+}
+
+/* fim da linha 3 */
+
+
+
+/* lista 4 */
+.game-list4{
+    display: flex;
+    justify-content: space-between;
+    line-height: .9px;
+    margin: 0;
+    background-color:  rgba(31, 19, 50, 1);
+    
+      
+}
+
+.games_legenda4{
+    margin-right: 220px;
+   
+}
+
+.games_legenda4 a{
+    text-decoration: none;
+    color: white;
+}
+
+.description{
+    font-size: 11px;
+}
+
+.games-legenda__price{
+    margin-right: 40px;
+}
+
+.games-legenda__price a{
+    text-decoration: none;
+    color: white;
+
+}
+
+.games-legenda__price img{
+    padding: 0px 30% 0px 30%;
+}
+
+/* fim da lista 4 */
+
+
+/* lista 5 */
+.game-list5{
+    display: flex;
+    justify-content: space-between;
+    line-height: .9px;
+    margin: 0;
+    background-color: rgba(27, 8, 33, 1);
+    
+      
+}
+
+.games_legenda5{
+    margin-right: 150px;
+   
+}
+
+.games_legenda5 a{
+    text-decoration: none;
+    color: white;
+}
+
+.description{
+    font-size: 11px;
+}
+
+.games-legenda__price{
+    margin-right: 40px;
+}
+
+.games-legenda__price a{
+    text-decoration: none;
+    color: white;
+
+}
+
+.games-legenda__price img{
+    padding: 0px 30% 0px 30%;
+}
+/* fim da lista 5 */
+
+
+/* fim da listas dos jogos */
+
+
+
+
+
+
+/* inincio do article lateral */
+
+.menu_horizon{
+    
+    width: 263px;
+    height: 380px;
+    margin-right: 40px;
+    margin-top: 80px;
+    border: solid 5px black;
+}
+
+.header-menu__horizon{
+    background-color:  rgba(27, 8, 33, 1);
+    color: white;
+    margin-top: 0;
+    height: 40px;
+    text-align: center;
+    margin: auto;
+}
+
+.menu-horizon img{
+    margin: 10px;
+}
+
+.menu-horizon_content img{
+    padding:10px 10px 0 10px;
+
+}
+
+.nav-forms {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  input {
+    padding: 5px;
+    outline: none;
+  }
+
+  .lista_jogos{
+    margin-left: 85%;
+    margin-top: 80px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    z-index: 1;
+    color: white;
+    color: #fff; /* Cor do texto */
+    text-shadow: 4px 4px 4px #000;
+  }
+/* inicio do rodape */
+.rodape{
+    width: 1550px;
+    height: 97px;
+    margin: auto;
+    
+}
+
+.rodape p{
+    text-align: center;
+    color: white;
+    margin: auto;
+    padding-top: 35px;
+}
+
+/* fim do rodape */
+
+#lista_jogos{
+    color: white;
+}

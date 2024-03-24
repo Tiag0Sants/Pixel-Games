@@ -1,0 +1,420 @@
+html,
+body{
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+margin: 0;
+}
+
+
+
+.wrapperContainer-header{
+    background-color: rgba(13, 6, 21, 1);
+}
+
+.wrappercontainer-content{
+    background-color: rgba(34, 0, 73, 1);
+}
+
+.wrapperContainer-footer{
+    background-color: rgba(13, 6, 21, 1);
+}
+
+
+
+
+/* inicio do header */
+.header_nav{
+   
+    max-width: 1550px;
+    height: 115px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+
+.list-item2{
+    display: flex;
+    float: right;
+    margin-top: 25px;
+}
+
+.list-item2 li:hover{
+    background-color:rgb(103, 42, 188) ;
+    padding: 3px;
+}
+
+
+
+
+/* começo do menu de icones */
+.nav_icons{
+    width: 400.56px;
+    max-height: 69px;
+    margin-right: 400px;
+    gap: 16px;
+    
+    
+}
+.voltar{
+    margin-right: 40px;
+}
+
+
+.nav-icons__list{
+    margin: 0; 
+    padding: 0;
+}
+
+
+.nav-icons__list li {
+  list-style-type: none;
+  margin-left: 8px;
+  display: inline;
+  
+   
+}
+
+.barra_pesquisa{
+    background-color: rgba(63, 24, 112, 1);
+    border: none;
+    outline: none;
+    border: 2px solid rgba(80, 10, 135, 1);
+    border-radius: 10px;
+    padding: 14px;
+    color: white;
+ }
+
+
+/* fim do menu de incones */
+
+
+
+
+
+
+
+/* menu opções */
+.nav_content{
+display: flex;
+max-width: 487px;
+}
+
+.nav_content ul{
+    list-style-type: none;
+    gap: 16px;
+}
+
+.nav_content ul li{
+    display: inline;
+    padding: 16px
+}
+
+.nav_content ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.nav_content a:hover{
+    color: rgb(103, 42, 188);
+    
+}
+/* fim do menu de opções */
+
+
+
+
+
+/* inicio do forms */
+
+.nav-forms{
+
+    max-width: 274.25px;
+    align-items: center;
+    
+}
+
+.nav-forms for{
+    border-radius: 1px;
+}
+
+/* fim do forms */
+/* fim do header */
+
+
+
+
+
+
+
+
+
+
+
+/* inicio da parte de vendas */
+
+.section_container{
+    width: 1550px;
+    height: 810px;
+    margin: auto;
+    display: flex;
+    
+}
+.section-container__main{
+    width: 1400px;
+}
+
+.section-container__content{
+    display: flex;
+}
+
+/* inicio da section description  */
+.secao-descricao{
+    color: white;
+    margin: 92px 0 110px 92px;
+    margin-top: 110px;;
+}
+
+.dados{
+    background-color: rgba(51, 133, 255, 1);
+    width:280px;
+    height: 57px;
+    border-radius: 5px;
+    padding-top: 10px;
+}
+.dados p{
+    text-align:center;
+    font-size: 25px;
+    padding: 8px;
+    margin: auto;
+}
+
+.imagem_flecha{
+    
+    margin-left: 45%;
+    margin-top: 20px;
+}
+
+
+.informações{
+    background-color: rgba(51, 133, 255, 1);
+    width: 232px;
+    height: 47px;
+    border-radius: 5px;
+    margin: auto;
+    margin-top: 16px;
+}
+
+
+.informações p{
+    font-size: 22px;
+    padding: 8px;
+    margin: auto;
+    text-align: center;
+}
+
+.imagem_astronauta{
+    width: fit-content;
+    margin: auto;
+
+    
+}
+/* fim da section description *
+
+
+/* inicio da section venda*/
+.section_venda{
+    
+    width: 915px;
+    height: 450px;
+    margin: 92px 0 110px 70px;
+    display: flex;
+    background-color: rgba(63, 24, 112, 1);  
+}
+
+.imagem-geraldao{
+    margin: 30px 0 0 50px;
+}
+
+.section-venda__container{
+    margin-left: 22px;
+    margin-top: 50px;
+    color: white;
+    width: 550px;
+    height: 296px;
+    background-image: linear-gradient(to top, #00000010, #000000);
+}
+
+.article__venda{
+    display: flex;
+}
+
+
+.titulo-article__vendas{
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.article-venda__img{
+    margin-left: 100px;
+}
+
+.article-forma-pagamento{
+    margin-top: 0px;
+}
+
+
+.article-forma-pagamento{
+    width: fit-content;
+   
+    margin-top: -70px;
+    margin-left: 10px;
+
+}
+
+.style-pagament__form{
+    width: 270px;
+    height: 30px;
+    border-radius: 5px;
+    
+}
+
+.style-pagament__txt{
+    width: 265px;
+    height: 30px;
+    margin-top: 20px;
+    border-radius: 5px;
+    padding: 0px;
+
+}
+
+.style-checkbox{
+    margin-top: 30px;
+    margin-left: 10px;
+}
+
+.termos_de_uso{
+    display: flex;
+    width: 420px;
+    gap: 16px;
+}
+
+.termos_de_uso p{
+    margin-top: 27px;
+    
+}
+
+.termos_de_uso p:hover{
+    text-decoration:underline;
+}
+
+.options_cidade{
+
+    height: fit-content;
+    margin-left: 2px;
+    
+}
+
+.options-cidade__box{
+    width: 132px;
+    height: 30px;
+    border-radius: 5px;
+    margin-left: 20px;
+}
+
+
+.article-button__compra{
+
+    margin-top: 100px;
+    width: fit-content;
+    height: fit-content;
+    margin-left: 45px;
+}
+
+
+.button-compra{
+ width: 456px;
+ height: 96px;
+ background-color: rgba(0, 39, 245, 1);
+ border-radius: 10px;
+ color: white;
+ font-weight: bold;
+ font-size: 28px;
+}
+/* fim da section venda */
+
+
+/* inicio da descriçãp */
+.article-venda__description{
+    color: white;
+    width: 883px;
+    height: 136px;
+    background-image: linear-gradient(to top, #00000010, #000000);
+    border-radius: 10px;
+    margin-top: -90px;
+}
+
+
+.section-venda__description{
+    margin-left: 442px;
+    margin-top: -285px;
+    background-color: rgba(63, 24, 112, 1);
+    width: 915px;
+}
+
+.section-venda__description p{
+    margin-top: 10px;
+    margin-left: 150px;
+    font-weight: bold;
+    font-size: 25px;
+    width: fit-content;
+    
+}
+
+.article-venda__description{
+ margin: 0px auto auto;
+
+}
+
+.article-venda__description p{
+    margin-left: 10px;
+    font-weight: normal;
+    margin-top:30px;
+    font-size: 20px;
+}
+
+/* fim da descrição */
+
+
+/* inicio do rodape */
+.rodape{
+    width: 1550px;
+    height: 97px;
+    margin: auto;
+    
+}
+
+
+.rodape p{
+    text-align: center;
+    color: white;
+    margin: auto;
+    padding-top: 35px;
+}
+/* fim do rodapé */
+
+.lista_jogos{
+    margin-left: 85%;
+    margin-top: 80px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    z-index: 1;
+    color: white;
+    color: #fff; /* Cor do texto */
+    text-shadow: 4px 4px 4px #000;
+  }

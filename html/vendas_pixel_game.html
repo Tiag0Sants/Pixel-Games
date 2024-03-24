@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="página da loja virtual da empresa Pixel games">
+    <meta name="author" content="Kaiqui Rocha da Silva">
+    <meta name="keywords" content="Loja,Pixel games,jogos">
+
+    <title>Página de venda</title>
+    <link rel="stylesheet" href="../html/vendas_pixel_games.css">
+</head>
+<body>
+    <div class="wrapperContainer-header">
+        <header class="header_nav">
+            <div class="nav_icons">
+                <ul class="nav-icons__list">
+                    <li class="voltar"><a href="pixel_game.html"><img src="./imagens_pixel_game/botão_de_retornar.png" alt=""></a></li>
+                    <li><a href="#"><img src="./imagens_pixel_game/Ellipse 1.png"alt="imagem de usuario"></a></li>
+                   <li><a href="#"><img src="./imagens_pixel_game/Vector.png" alt="ìcone configuração"></a></li>
+                    <li><a href="#"><img src="./imagens_pixel_game/Group 2.png" alt="ícone social"></a></li>
+                </ul>
+            </div>
+
+            <nav class="nav_content">
+                <ul class="nav-itens">
+                    <li><a href="menu_pixel_games_novidade.html">Novidades</a></li>
+                    <li><a href="menu_pixel_games.html">Promoções</a></li>
+                    <li><a href="menu_pixel_games_gratuito.html">Jogos Gratuitos</a></li>
+                </ul>
+            </nav>
+        
+            <div class="nav-forms"><form name="form1" action="grava.jsp" method="post">
+                <img src="./imagens_pixel_game/Group.png" alt="ícone de lupa">
+                <input type="text" name="txtpesquisa" maxlength="20" placeholder="procurar">
+                </form>
+            </div>
+        </header>
+    </div>
+
+    <div class="wrappercontainer-content">
+        <div class="section_container">
+            <div class="section-container__main">
+                <div class="section-container__content">
+                    <div class="secao-descricao">
+                        <div class="dados">
+                            <p>Dados de Pagamento</p>
+                        </div>
+                        <img src="./imagens_pixel_game/fontisto_arrow-h.png" alt="imagem de flecha" class="imagem_flecha">
+                        <div class="informações">
+                            <p>revisão + compra</p>
+                        </div>
+                        <div class="imagem_astronauta">
+                            <img src="./imagens_pixel_game/astronauta.png" alt="imagem de astrounauta">
+                        </div>
+                    </div>
+
+                    <section class="section_venda">
+                        <article class="article-venda__image">
+                            <img src="./imagens_pixel_game/retangulo the witcher.png" alt="imagem de game" class="imagem-geraldao">
+                        </article>
+                        <article class="section-venda__container">
+                            <div class="article__venda">
+                                <p class="titulo-article__vendas">Selecione uma forma de pagamento</p>
+                                <div class="article-venda__img">
+                                    <img src="./imagens_pixel_game/logo_pixel_games.png" alt="logo da loja">
+                                </div>
+                            </div>
+                            <div class="article-forma-pagamento">
+                                <form name="forma-de-pagamento" action="grava.jsp" method="post" >
+                                    <select name="forma-de-pagamento" class="style-pagament__form">
+                                        <option value="vazio"></option>
+                                        <option value="PIX"> PIX </option>
+                                        <option value="cartão">Cartão de crédito</option>
+                                        <option value="cartãoD">Cartão de Débito</option>
+                                        <option value="Boleto">Boleto</option>
+                                    </select>
+                                </form>
+                                <form name="forma-de-pagamento_txt" action="grava.jsp" method="post" >
+                                    <input type="text" name="txtcpf" maxlength="14" placeholder="Digite seu CPF" class="style-pagament__txt">
+                                    <input type="text" name="cidade" maxlength="2" placeholder="digite sua cidade" class="options-cidade__box">
+                                </form>
+                            </div>
+                            <div class="termos_de_uso">
+                                <form action="grava.jsp" method="post" >
+                                    <input type="checkbox" name="termos" class="style-checkbox"> 
+                                </form>
+                                <p class=>Aceito os termos do Acordo de Assinatura da Pixel Games</p>
+                            </div>
+                            <div class="article-button__compra"> 
+                                <button class="button-compra"><p> finalizar compra</p></button>
+                            </div> 
+                        </article>
+                    </section>
+                </div>
+                <section class="section-venda__description">
+                    <article>
+                        <p>Descrição</p>
+                        <div class="article-venda__description">
+                        <p>Você é Geralt de Rívia, mercenário matador de monstros. O lugar é um continente devastado pela guerra e infestado de monstros que você pode explorar à vontade. Seu contrato atual? Encontrar Ciri, a Criança da Profecia — uma arma viva que pode alterar a forma do mundo.</p>
+                        </div>
+                    </article>
+                </section>
+            </div>
+        
+            
+       
+            
+
+    
+    </div>
+    <div class="wrapperContainer-footer">
+        <footer class="rodape">
+            <p> &copy;2023       Todos os direitos reservados a Pixel games</p>
+        </footer>
+    </div>
+</body>
+</html>

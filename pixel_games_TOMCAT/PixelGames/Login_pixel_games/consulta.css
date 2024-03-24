@@ -1,0 +1,33 @@
+.wrapper{
+    max-width: 1550px;
+    height: 115px;
+    margin: auto;
+    justify-content: space-around;
+    align-items: center;
+}
+.bloco-container{
+    width: 1000px;
+    height: 700px;
+    background-image: linear-gradient(rgba(34, 0, 73, 1),rgba(34, 0, 46, 1));
+    color: rgba(255, 255, 255, 1);
+    text-align: center;
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 80px;
+    border:3px solid rgb(0, 0, 0);
+    align-items: center;
+    justify-content: center;
+    
+}
+body{font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    max-height:;
+    background-image: linear-gradient(rgba(91, 3, 160, 1),#3d1e5f);
+
+}
+table{
+    text-align: center;
+    justify-content: center;
+    margin-left: 360px;
+    margin-top: 20px;
+}
+

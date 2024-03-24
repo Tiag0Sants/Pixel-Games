@@ -1,0 +1,51 @@
+body{font-family: 'roboto';
+    background-image: linear-gradient(rgba(34, 0, 73, 1),rgba(34, 0, 46, 1));
+    min-height: 100vh;
+}
+.wrapper{
+    display: flex;
+    position: relative;
+    justify-content: right;
+}
+.scroll-text{
+    color: white;
+    font-size: 3vw;
+    line-height: 1.5em;
+    font-weight: bold;
+    text-align: justify;
+    position: relative;
+    animation: scroll 120s linear forwards;
+    width: 1700px;
+
+}
+.scroll-text p{
+    font-size: 40px;
+    margin: 110px;
+    text-align: center;
+}
+.arrowicon{
+    color: white;
+    margin-top: 15px;
+}
+.arrowicon i{
+    font-size: 25px;
+}
+.voltar{
+    display: flex;
+    margin-top: 26px;
+    width: 130px;
+}
+.voltar p a{
+    color: white;
+    text-decoration: none;
+    font-size:23px;
+    display: flex;
+}
+h1,h2,h3{
+    text-align: center;
+    font-size: 60px;
+}
+@keyframes scroll{
+    from{top: 0px;}
+    to{top:-8000px;}
+}
